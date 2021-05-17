@@ -3,7 +3,8 @@
 ### MNC - 5/21 (mncook.net)
 
 #Run Handprint in iPython notebook using URLs from .txt file
-#see https://github.com/caltechlibrary/handprint for complete documentation
+#Local configuration required before this step
+#see https://github.com/caltechlibrary/handprint for setup instructions and documentation
 get_ipython().system('handprint --service microsoft --from-file "xxxx" --no-grid --extended --output "xxxx"')
 
 ####Bag-of-Words txt output and string search from HandPrint transcriptions
