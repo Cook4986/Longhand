@@ -1,2 +1,2 @@
-# HP_Mining
+# HandMine
 Downstream text mining with HandPrint output
