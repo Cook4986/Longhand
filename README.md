@@ -1,2 +1,2 @@
 # HandMine
-Downstream text mining with HandPrint output
+Image prep + cloud-based handwriting transcription + text mining
