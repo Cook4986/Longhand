@@ -4,8 +4,10 @@
 ###Matt Cook 2021###
 ###Requires HandPrint (https://github.com/caltechlibrary/handprint) from Mike Hucka
 
-#Run Handprint using URLs from .txt file
-get_ipython().system('handprint --service microsoft --from-file "xxx" --no-grid --extended --output "xxx')
+#Run Handprint from local directory
+!handprint --service microsoft "xxx" --no-grid --extended --output "xxx"
+
+#xxx = directory pathnames
 
 ####Bag-of-Words txt output and string search from HandPrint transcriptions. MNC - 5/21
 ###Built to work with HandPrint, by Mike Hucka: 
