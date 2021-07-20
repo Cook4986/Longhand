@@ -1,4 +1,4 @@
-# HandMine #
+# Longhand #
 Image prep + cloud-based handwriting transcription + text mining
 Combines
  * [OpenCV](https://github.com/opencv/opencv) (with implementation help from Gabe Pizzorno)
