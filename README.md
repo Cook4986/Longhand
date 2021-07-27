@@ -10,7 +10,7 @@ Longhand takes a handwritten text corpus and returns an immersive visualization.
 ### Limitations
 * Best for nouns (i.e. things) in the corpus
 * Proprietary HTR (Amazon, Google, Microsoft)
-*Model placement in scene is unsolved 
+* Model placement in scene is unsolved 
 ### Next Steps
 * Short term: Hack Hubs, Topic Modeling 
 * Long term: Audio, Video, Image support
