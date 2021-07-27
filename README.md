@@ -1,9 +1,8 @@
 # **Longhand** #
-longhand takes a handwritten text corpus and returns an immersive visualization. 
+Longhand takes a handwritten text corpus and returns an immersive visualization. 
 
 ![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1627401430752-R7H10DTUUOSB4GKDDKD1/Longhand+Throughput_Cook2021.png?format=2500w)
 
-## Considerations
 ### Innovations
 * Supports “raw” input data, at scale (HTR)
 * Leverages large 3D asset collections (Sketchfab)
