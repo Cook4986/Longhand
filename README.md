@@ -1,5 +1,5 @@
 # **Longhand** #
-Longhand takes a handwritten text corpus and returns an immersive visualization. 
+Longhand takes images of handwritten text and returns an immersive visualization. 
 
 ![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1627401430752-R7H10DTUUOSB4GKDDKD1/Longhand+Throughput_Cook2021.png?format=2500w)
 
