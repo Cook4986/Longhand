@@ -16,7 +16,7 @@ Longhand takes images of handwritten text and returns an immersive visualization
 * Long term: Audio, Video, Image support
 * Other collections 
 
-## Core Components
+## Core Technologies
  * [OpenCV](https://github.com/opencv/opencv)
  * [HandPrint](https://github.com/caltechlibrary/handprint)
  * [SpaCy](https://github.com/explosion/spaCy)
