@@ -6,7 +6,10 @@ Longhand takes images of handwritten text and returns an immersive visualization
 ### Innovations
 * Supports “raw” input data, at scale (HTR)
 * Leverages large 3D asset collections (Sketchfab)
-* Exposes humanities to the benefits of XR 
+* Exposes humanities to the benefits of XR
+  * Depth of field
+  * Embodied interactivity
+  * Scale
 ### Limitations
 * Best for nouns (i.e. things) in the corpus
 * Proprietary HTR (Amazon, Google, Microsoft)
