@@ -27,4 +27,4 @@ Longhand takes images of handwritten text and returns an immersive visualization
  * [Blender 3.0.1 Python API](https://docs.blender.org/api/current/index.html)
  * [Mozilla Hubs](https://github.com/mozilla/hubs)
 
-Matt Cook - 2021
+Matt Cook (mncook.net)- 2022
