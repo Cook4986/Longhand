@@ -9,7 +9,7 @@ Longhand takes images of handwritten text and returns an immersive visualization
 * Exposes humanities to the benefits of XR
   * Depth of field
   * Embodied interactivity
-  * Scale
+  * Sense of scale
 ### Limitations
 * Best for nouns (i.e. things) in the corpus
 * Proprietary HTR (Amazon, Google, Microsoft)
