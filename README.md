@@ -20,10 +20,10 @@ Longhand takes images of handwritten text and returns an immersive visualization
 * Other collections 
 
 ## Core Technologies
- * [OpenCV](https://github.com/opencv/opencv)
- * [HandPrint](https://github.com/caltechlibrary/handprint)
- * [SpaCy](https://github.com/explosion/spaCy)
+ * [HandPrint](https://github.com/caltechlibrary/handprint)(version: 1.5.1)
+ * [SpaCy]((https://github.com/explosion/spaCy)(3.2.1)
  * [Sketchfab data API, V3](https://docs.sketchfab.com/data-api/v3/index.html)
+ * [Blender](https://www.blender.org/)(3.0.1)
  * [Blender 3.0.1 Python API](https://docs.blender.org/api/current/index.html)
  * [Mozilla Hubs](https://github.com/mozilla/hubs)
 
