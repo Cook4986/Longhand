@@ -1,5 +1,5 @@
 # **Longhand** #
-Longhand is a python notebook and associated Blender python (bpy) scripts that, combined, takes images of handwritten text and return an immersive visualization for use in [Mozilla Hubs](https://hubs.mozilla.com/). Longhand allows non-technical end users to explore unwieldy text corpora during early in the research lifecycle. 
+Longhand is a python notebook and associated Blender python (bpy) scripts that, combined, takes images of handwritten text and return an immersive visualization for use in [Mozilla Hubs](https://hubs.mozilla.com/). Longhand allows non-technical end users to explore unwieldy text corpora early in the research lifecycle. 
 
 ![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1627401430752-R7H10DTUUOSB4GKDDKD1/Longhand+Throughput_Cook2021.png?format=2500w)
 
@@ -9,7 +9,7 @@ Longhand is a python notebook and associated Blender python (bpy) scripts that, 
 ### Innovations
 * Supports “raw” input data, at scale (HTR)
 * Leverages large 3D asset collections (Sketchfab)
-* Exposes humanities to the benefits of XR
+* Exposes text-centric fields to the benefits of XR
   * Depth of field
   * Embodied interactivity
   * Sense of scale
