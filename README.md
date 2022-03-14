@@ -1,5 +1,5 @@
 # **Longhand** #
-Longhand is a python notebook and associated Blender python script that, combined, takes images of handwritten text and returns an immersive visualization. Longhand allows non-technical end users in the humanities to explore unwieldy text corpora during the early stages of research. 
+Longhand is a python notebook and associated Blender python (bpy) scripts that, combined, takes images of handwritten text and returns an immersive visualization. Longhand allows non-technical end users to explore unwieldy text corpora during early in the research lifecycle. 
 
 ![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1627401430752-R7H10DTUUOSB4GKDDKD1/Longhand+Throughput_Cook2021.png?format=2500w)
 
@@ -13,16 +13,18 @@ Longhand is a python notebook and associated Blender python script that, combine
   * Depth of field
   * Embodied interactivity
   * Sense of scale
+
 ### Limitations
 * Best for nouns (i.e. things) in the corpus
 * Proprietary HTR (Amazon, Google, Microsoft)
 * Model placement in scene is unsolved 
-### Next Steps
-* Short term: Hack Hubs, Topic Modeling 
-* Long term: Audio, Video, Image support
-* Other collections 
 
-## Core Technologies
+### Next Steps
+* Automate model distribution in Blender 
+* Automate GLB file hosting for Hubs
+* Hack hubs to recognize and change scene using GLBs
+
+### Core Technologies
  * [HandPrint](https://github.com/caltechlibrary/handprint)(version: 1.5.1)
  * [SpaCy](https://github.com/explosion/spaCy)(3.2.1)
  * [Sketchfab data API, V3](https://docs.sketchfab.com/data-api/v3/index.html)
