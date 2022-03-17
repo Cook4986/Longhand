@@ -1,4 +1,4 @@
-#automatically downloads Sketchfab models corresponding to 
+#automatically downloads Sketchfab models corresponding to common words in corpus
 import bpy
 import json
 import time
