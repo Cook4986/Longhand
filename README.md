@@ -18,9 +18,9 @@ Longhand is a python notebook and associated Blender python (bpy) scripts that, 
 * Proprietary HTR (Amazon, Google, Microsoft)
 * Model placement in scene is unsolved 
 ### Next Steps
+* Link with [SAEF repo](https://github.com/Cook4986/SAEF_OCR)
 * Automate model distribution in Blender 
 * Automate GLB file hosting for Hubs
-* Hack hubs to recognize and change scene using GLBs
 ### Core Technologies
  * [HandPrint](https://github.com/caltechlibrary/handprint)(version: 1.5.1)
  * [SpaCy](https://github.com/explosion/spaCy)(3.2.1)
