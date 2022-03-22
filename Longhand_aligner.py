@@ -4,7 +4,7 @@ import bpy
 import json
 
 #declarations
-input = "/Users/matthewcook/Dropbox/Viz/Longhand/objects.txt"
+input = ".../Longhand/objects.txt"
 
 #create dictionary from objects document
 with open(input,'r') as f: 
