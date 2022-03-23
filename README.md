@@ -16,7 +16,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * Supports “raw” input data, at scale (HTR)
 * Leverages large 3D asset collections (Sketchfab)
 * Exposes text-centric fields to the benefits of XR
-  * Depth of field
+  * Depth cues
   * Embodied interactivity
   * Sense of scale
 ### Limitations
