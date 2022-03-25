@@ -1,18 +1,18 @@
-#(placeholder) Takes Blender scene of downloaded Sketchfab files and distributes models according to their frequency in text corpus
+#Takes Blender scene of downloaded Sketchfab files and distributes models according to their frequency in text corpus
 #launch blender with terminal: !/Applications/Blender.app/Contents/MacOS/Blender --python-console
 import bpy
 import json
 
 #declarations
-input = "/Users/matthewcook/Dropbox/Viz/Longhand/objects.txt"
+input = ".../objects.txt"
 xtran = 3
 ytran = 0
 
 #create ground plane and align all downloads with the plane
 bpy.ops.mesh.primitive_plane_add(size=250, enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
 bpy.ops.object.select_all(action='SELECT')
-bpy.ops.object.align_tools(loc_z=True, ref1='0', ref2='0', scale_x=True, scale_y=True, scale_z=True, apply_scale=True)
-#bpy.ops.object.align_tools(loc_z=True, ref1='0', ref2='0')
+bpy.ops.object.align_tools( cale_x=True, scale_y=True, scale_z=True, apply_scale=True)
+bpy.ops.object.align_tools(loc_z=True, ref1='0', ref2='0')
 bpy.ops.object.select_all(action='DESELECT')
 
 #create dictionary from objects document
@@ -20,7 +20,6 @@ with open(input,'r') as f:
     models = json.load(f)
 {key: value for key, value in sorted(models.items(), key=lambda item: item[1])}
 
-print
 #rescale downloads according to their relative frequency in corpus
 for key,value in models.items():
     if len(value) > 2:    
