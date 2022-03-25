@@ -7,11 +7,13 @@ import time
 start = time.time()
 input = "/Users/matthewcook/Dropbox/Viz/Longhand/objects.txt"
 
-#startup
+#startup and activate Sketchfab plugin
 bpy.ops.object.delete(use_global=False, confirm=False)
-bpy.data.window_managers["WinMan"].sketchfab_api.email = "..."
-bpy.data.window_managers["WinMan"].sketchfab_api.password = "..."
+bpy.data.window_managers["WinMan"].sketchfab_api.email = "matt_cook@harvard.edu"
+bpy.data.window_managers["WinMan"].sketchfab_api.password = "SchnapTest1234"
 bpy.ops.wm.skfb_enable(enable=True)
+bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportBoolean = True
+
 
 #open and sort objects dict
 with open(input,'r') as f: 
@@ -20,19 +22,26 @@ with open(input,'r') as f:
 
 #iterate over dictionary objects, download and place
 for key,value in models.items():
-    print(value[1])
-    freq = (value[0])
-    print("Represents " + str(value[0]) + "%" + " of objects in scene.")
-    query = (value[1])
-    print(value[2])
-    uid = (value[2])
-    bpy.data.window_managers["WinMan"].sketchfab_browser_proxy.query = str(query)
-    time.sleep(5)
-    bpy.ops.wm.sketchfab_download(model_uid=(str(uid)))
+    if len(value) > 2:
+        print(value[1])
+        freq = (value[0])
+        print("Represents " + str(value[0]) + "%" + " of objects in scene.")
+        query = (value[1])
+        print("uid: " + str(value[2]))
+        uid = (value[2])
+        url = (value[3])
+        bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportPath = str(url)
+        bpy.ops.wm.sketchfab_download(model_uid=uid)
+        time.sleep(5)
+        print("\n")
 
+#close processes
 end = time.time()
 print(str(end - start) + " seconds to download all models into scene" )
+bpy.context.view_layer.update()
+bpy.ops.object.select_all(action='DESELECT')
+f.close()
 
-print("have a nice day")
-
-
+print("\n")
+print("downloads complete")
+print("\n")
