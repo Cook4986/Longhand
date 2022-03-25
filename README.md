@@ -37,5 +37,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 ### Further Reading
 * ["Perceiving layout and knowing distances: The integration, relative potency, and contextual use of different information about depth"](https://www.researchgate.net/profile/James-Cutting/publication/236964257_Perceiving_layout_and_knowing_distances_The_interaction_relative_potency_and_contextual_use_of_different_information_about_depth/links/0c96051a7a988e9232000000/Perceiving-layout-and-knowing-distances-The-interaction-relative-potency-and-contextual-use-of-different-information-about-depth.pdf) Cutting & Vishton 1995
 * ["Promoting rotational-invariance in object recognition despite experience with only a single view"](https://www.sciencedirect.com/science/article/pii/S0376635715300735?casa_token=RFiw0OhRdPsAAAAA:7rb-Hsu-ZnPZs2l1iwr2g61yJCY4lXp6nfRIP299JcLv7G7L8EmALA3VzYyQ910dIfLKj1lh) Soto & Wasserman 2016
+* ["Studying the effects of stereo, head tracking, and field of regard on a small-scale spatial judgment task"](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6261311&casa_token=101RdCpGgAgAAAAA:tW7Hjpk6IvHNIcPI1gnoxbVBMCxtnU9sNHan2L0xB36jFL_Oz_kskc49IlVyb0YBsOcC5s0) Ragan et al. 2013
+* ["Evaluating the benefits of the immersive space to think"](https://infovis.cs.vt.edu/sites/default/files/WEVR2020_Lisle.pdf) Lisle et al. 2020
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
