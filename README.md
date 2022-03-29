@@ -32,7 +32,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
  * [SpaCy](https://github.com/explosion/spaCy)(3.2.1)
  * [Sketchfab data API, V3](https://docs.sketchfab.com/data-api/v3/index.html)
  * [Blender](https://www.blender.org/)(3.0.1)
- * [Blender 3.0.1 Python API](https://docs.blender.org/api/current/index.html)
+ * [Blender Python API](https://docs.blender.org/api/current/index.html)
  * [Mozilla Hubs](https://github.com/mozilla/hubs)
 ### Further Reading
 * ["Perceiving layout and knowing distances: The integration, relative potency, and contextual use of different information about depth"](https://www.researchgate.net/profile/James-Cutting/publication/236964257_Perceiving_layout_and_knowing_distances_The_interaction_relative_potency_and_contextual_use_of_different_information_about_depth/links/0c96051a7a988e9232000000/Perceiving-layout-and-knowing-distances-The-interaction-relative-potency-and-contextual-use-of-different-information-about-depth.pdf) Cutting & Vishton 1995
