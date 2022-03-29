@@ -48,6 +48,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["The Capacity of Visual Short-Term Memory is Set Both by Visual Information Load and by Number of Objects"](https://journals.sagepub.com/doi/full/10.1111/j.0963-7214.2004.01502006.x?casa_token=hz68zoEojfAAAAAA%3AXgTymvc1EPi_b5RVMoBsseOrIK31B8MsuINWI46cGw8EldYvovacJIlQIRsJ1fjEX7drHwMpYMQ) Alvarez and Cavanaugh 2004
 * ["Visual spatial learning of complex object morphologies through the interaction with virtual and real-world data"](https://www.sciencedirect.com/science/article/pii/S0142694X10000128?casa_token=8P-CO_HqYmkAAAAA:YsBBDG1svWOeaylHEqazgOIdRnRLxYIxUT403mSejcle87KsRDOEypAi-LnHe8-vkFGCyzwj) Silvestri et al. 2010
 * ["Peripheral vision and pattern recognition: A review”](https://jov.arvojournals.org/article.aspx?articleid=2191825) Strasburger, Rentschler, and Juttner 2010
+* ["An evaluation of Depth Enhancing Perceptual Cues for Vascular Volume Visualization in Neurosurgery”](https://ieeexplore.ieee.org/abstract/document/6620865?casa_token=IvrlmZRQ-J4AAAAA:Me20NjzNmt4e6xe_6PYt51zA91yDYvY8Od1drMeYfJtX-Uo-Vjfp-U_hTkxJue1US9Q6h_s)Kersten-Pertel, Jy-Shyang Chen, and Collins 2012 
 
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
