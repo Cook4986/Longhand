@@ -45,5 +45,6 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["There Is No Spoon: Evaluating Performance, Space Use, and Presence with Expert Domain Users in Immersive Analytics"](https://ieeexplore.ieee.org/abstract/document/8820171?casa_token=YmPsNHmA6bgAAAAA:01jAPRcwrGHw6EMeOROp_HnbMAIpBqv-FFmSx1f7WwQSnqJUBC7D1PCNoR4QCJv8YDEIlmM) Batch et al. 2020
 * ["Space to think: large high-resolution displays for sensemaking"](https://dl.acm.org/doi/abs/10.1145/1753326.1753336?casa_token=QaujgYdz_WwAAAAA:UxZS8_ZIvM1MnJxEDre7qjy4CKk4ay4DznPaUfbM0q52MWhq6J_LsT44q-Yd-STGeX7fSwzu4Sc) Andrews, Endert, and North 2010
 * ["A theory of direct visual perception"](https://monoskop.org/images/1/12/Gibson_James_J_1972_2002_A_Theory_of_Direct_Visual_Perception.pdf) Gibson 1972
+* ["The Capacity of Visual Short-Term Memory is Set Both by Visual Information Load and by Number of Objects"](https://journals.sagepub.com/doi/full/10.1111/j.0963-7214.2004.01502006.x?casa_token=hz68zoEojfAAAAAA%3AXgTymvc1EPi_b5RVMoBsseOrIK31B8MsuINWI46cGw8EldYvovacJIlQIRsJ1fjEX7drHwMpYMQ) Alvarez and Cavanaugh 2004
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
