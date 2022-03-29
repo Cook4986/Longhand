@@ -42,5 +42,6 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * [Virtual replicas of real places: Experimental investigations](https://ieeexplore.ieee.org/abstract/document/9483619?casa_token=byJ-FUFnO6kAAAAA:U6WLbgSz5wMUsxrDZezeC--BmqKY7LKTPvpDBOOO2LL2UcBmgZAZ9XHMObFTFe6dy0nDzWY) Skarbez et al. 2021
 * ["Quantitative evaluation of visual guidance effects for 360-degree directions"](https://link.springer.com/article/10.1007/s10055-021-00574-7) Harada & Oyhama 2021
 * ["The Sensemaking Process and Leverage Points for Analyst Technology as Identified Through Cognitive Task Analysis"](https://www.e-education.psu.edu/geog885/sites/www.e-education.psu.edu.geog885/files/geog885q/file/Lesson_02/Sense_Making_206_Camera_Ready_Paper.pdf) Pirelli & Card 2005
+* ["There Is No Spoon: Evaluating Performance, Space Use, and Presence with Expert Domain Users in Immersive Analytics"](https://ieeexplore.ieee.org/abstract/document/8820171?casa_token=YmPsNHmA6bgAAAAA:01jAPRcwrGHw6EMeOROp_HnbMAIpBqv-FFmSx1f7WwQSnqJUBC7D1PCNoR4QCJv8YDEIlmM) Batch et al. 2020
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
