@@ -5,7 +5,7 @@ import time
 
 #declarations
 start = time.time()
-input = "/Users/matthewcook/Dropbox/Viz/Longhand/objects.txt"
+input = "/Users/mac6468/Dropbox/Viz/Longhand/objects.txt"
 
 #startup and activate Sketchfab plugin
 bpy.ops.object.delete(use_global=False, confirm=False)
