@@ -5,7 +5,11 @@ import time
 
 #declarations
 start = time.time()
+<<<<<<< HEAD
 input = "/Users/mac6468/Dropbox/Viz/Longhand/objects.txt"
+=======
+input = ".../Longhand/objects.txt"
+>>>>>>> e42efe9cf778cfc74f5929edd67630709ea1f3c0
 
 #startup and activate Sketchfab plugin
 bpy.ops.object.delete(use_global=False, confirm=False)
