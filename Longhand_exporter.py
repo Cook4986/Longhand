@@ -17,6 +17,5 @@ for obj in selection:
     view_layer.objects.active = obj
     bpy.ops.export_scene.gltf(filepath=outPath + ".GLB", use_visible=True)
     obj.select_set(False)
-    print("written:", fn)
 
 print("have a nice day")
