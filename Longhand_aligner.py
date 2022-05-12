@@ -6,7 +6,7 @@ import json
 #declarations
 input = ".../objects.txt"
 
-#enable add-ons
+#enable critical add-ons
 bpy.ops.preferences.addon_enable(module="space_view3d_align_tools")
 
 #create ground plane + rescale and align downloads to ground plane
@@ -35,22 +35,16 @@ for key,value in models.items():
         print((str(Object)) + "rescaled to: " + (str(Object.scale)) + " and moved to: " + (str(Object.location)))
         print("\n")
 
-#Align all downloads with the plane
-bpy.ops.object.select_all(action='SELECT')
-
-bpy.ops.object.select_all(action='DESELECT')
-
 #add Hubs components to surface plane
 bpy.context.active_object.select_set(True)
 bpy.ops.wm.add_hubs_component(object_source="object", component_name="skybox")
 bpy.ops.wm.add_hubs_component(object_source="object", component_name="visible")
 bpy.ops.wm.add_hubs_component(object_source="object", component_name="nav-mesh")
 
-#update to Top Orthogrpahic view
+#update viewport to Top Orthographic perspective
 for area in bpy.context.screen.areas:
     if area.type == 'VIEW_3D':
         override = bpy.context.copy()
         override['area'] = area
         bpy.ops.view3d.view_axis(override, type='TOP')
-
 print("\n")
