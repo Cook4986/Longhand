@@ -1,17 +1,15 @@
 #Takes Blender scene of downloaded Sketchfab files and distributes models according to their frequency in text corpus
-#launch blender with terminal: !/Applications/Blender.app/Contents/MacOS/Blender --python-console
+#launch blender with terminal: !/Applications/Blender.app/Contents/MacOS/Blender
 import bpy
 import json
 
 #declarations
-input = "....txt"
-xtran = 10
-ytran = 0
+input = ".../objects.txt"
 
 #enable add-ons
 bpy.ops.preferences.addon_enable(module="space_view3d_align_tools")
 
-#create ground plane and align all downloads with the plane
+#create ground plane + rescale and align downloads to ground plane
 bpy.ops.mesh.primitive_plane_add(size=250, enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.align_tools(scale_x=True, scale_y=True, scale_z=True, apply_scale=True)
@@ -26,28 +24,21 @@ with open(input,'r') as f:
 #rescale downloads according to their relative frequency in corpus
 for key,value in models.items():
     if len(value) > 2:    
-        name = value[1]
-        print(name)
+        Object = bpy.data.objects["" + value[1] + ""]
+        print((str(Object)) + " of scale: " + (str(Object.scale)) + " situated at: " + (str(Object.location)))
         freq = value[0]
-        #print(value)
-        #list(bpy.data.objects)
-        for object in bpy.data.objects:
-            print(object)
-            check = str(object)
-            check = check.lower()
-            if name in check:
-                print(name + " model")
-                object.scale[0] = .01 * freq
-                object.scale[1] = .01 * freq
-                object.scale[2] = .01 * freq
-                print("rescaled to: " + (str(object.scale)))
-                object.location[0] = object.location[0] * xtran
-                object.location[1] = object.location[1] * ytran
-                xtran = (xtran + 5) * -1
-                print("New X coordinate = " + (str(xtran)))
-                ytran = (ytran + xtran) * -1
-                print("New Y coordinate = " + (str(ytran)))
-                print("\n")
+        Object.scale[0] = .1 * freq
+        Object.scale[1] = .1 * freq
+        Object.scale[2] = .1 * freq
+        Object.select_set(True)
+        bpy.ops.object.randomize_transform(loc=(200.00, 000.00, 200.00))
+        print((str(Object)) + "rescaled to: " + (str(Object.scale)) + " and moved to: " + (str(Object.location)))
+        print("\n")
+
+#Align all downloads with the plane
+bpy.ops.object.select_all(action='SELECT')
+
+bpy.ops.object.select_all(action='DESELECT')
 
 #add Hubs components to surface plane
 bpy.context.active_object.select_set(True)
