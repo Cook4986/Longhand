@@ -1,4 +1,4 @@
-#Takes Blender scene of downloaded Sketchfab files and distributes models according to their frequency in text corpus
+#Takes Blender scene of downloaded Sketchfab files and resizes then randomly distributes models according to their frequency in text corpus
 #launch blender with terminal: !/Applications/Blender.app/Contents/MacOS/Blender
 import bpy
 import json
