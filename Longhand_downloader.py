@@ -5,23 +5,18 @@ import time
 
 #declarations
 start = time.time()
-<<<<<<< HEAD
-input = "/Users/mac6468/Dropbox/Viz/Longhand/objects.txt"
-=======
-input = ".../Longhand/objects.txt"
->>>>>>> e42efe9cf778cfc74f5929edd67630709ea1f3c0
+input = ".../objects.txt"
 
 #startup and activate Sketchfab plugin
 bpy.ops.object.delete(use_global=False, confirm=False)
-bpy.data.window_managers["WinMan"].sketchfab_api.email = "matt_cook@harvard.edu"
-bpy.data.window_managers["WinMan"].sketchfab_api.password = "SchnapTest1234"
+bpy.data.window_managers["WinMan"].sketchfab_api.email = "..."
+bpy.data.window_managers["WinMan"].sketchfab_api.password = "..."
 bpy.ops.wm.skfb_enable(enable=True)
 bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportBoolean = True
 
-
 #open and sort objects dict
 with open(input,'r') as f: 
-	models = json.load(f)
+    models = json.load(f)
 {key: value for key, value in sorted(models.items(), key=lambda item: item[1])}
 
 #iterate over dictionary objects, download and place
