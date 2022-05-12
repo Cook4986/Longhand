@@ -14,7 +14,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 
 ### Innovations
 * Supports “raw” text input data
-* Leverages large, existing 3D asset collections
+* Leverages large, existing 3D asset collections (i.e. Sketchfab)
 * Exposes text-centric fields to the benefits of XR
   * Depth cues
   * Embodied interactivity
