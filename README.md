@@ -1,5 +1,5 @@
 # **Longhand** #
-Longhand takes a text document and returns an immersive visualization (.glb file) representing common words/tokens/entities. Longhand allows non-technical end users to explore unwieldy text corpora (including in VR) early in the research lifecycle. Longhand is an extension of Mike Hucka's [HandPrint](https://github.com/caltechlibrary/handprint) tool and subsequent data management efforts by Harvard Library, including the [SAEF_OCR](https://github.com/Cook4986/SAEF_OCR) project.
+Longhand takes a text document and returns an immersive visualization (.glb file) representing common words/tokens/entities in that text. Longhand allows non-technical end users to explore unwieldy text corpora (including in VR) early in the research lifecycle. Longhand is an extension of Mike Hucka's [HandPrint](https://github.com/caltechlibrary/handprint) tool and subsequent data management efforts by Harvard Library, including the [SAEF_OCR](https://github.com/Cook4986/SAEF_OCR) project.
 
 ![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1627401430752-R7H10DTUUOSB4GKDDKD1/Longhand+Throughput_Cook2021.png?format=2500w)
 
