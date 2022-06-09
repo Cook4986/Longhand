@@ -5,7 +5,7 @@ from bpy import context
 import json
 
 #declarations
-input = "...objects.txt"
+input = ".../objects.txt"
 count = 0
 
 #enable critical add-ons
@@ -38,7 +38,7 @@ for key,value in models.items():
         freq = (value[0])
         Object.select_set(True)
         
-        #normalize scale script from Athanaze (https://github.com/Athanaze/Blender-Normalize-Object)
+        #normalize object scale script from Athanaze (https://github.com/Athanaze/Blender-Normalize-Object)
         context.scene.cursor.location = [0.0, 0.0, 0.0]
         bpy.ops.object.rotation_clear(clear_delta=False)
         bpy.ops.object.location_clear(clear_delta=False)
@@ -75,7 +75,7 @@ for key,value in models.items():
 
         size = [highest[0]-lowest[0], highest[1]-lowest[1],highest[2]-lowest[2]]
 
-        s = 2/sorted(size)[2]
+        s = 50/sorted(size)[2]
 
         bpy.ops.transform.resize(
             value=(s, s, s),
@@ -90,15 +90,15 @@ for key,value in models.items():
             use_proportional_projected=False
         )
         #rescale by relative frequency in corpus
-        Object.scale[0] = .1 * freq
-        Object.scale[1] = .1 * freq
-        Object.scale[2] = .1 * freq
+        Object.scale[0] = .05 * freq
+        Object.scale[1] = .05 * freq
+        Object.scale[2] = .05 * freq
         
         #distribute objects along spiral
         Object.select_set(True)
         Object.constraints.new(type='FOLLOW_PATH')
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
-        Object.constraints["Follow Path"].offset = (freq * -1)
+        Object.constraints["Follow Path"].offset = ((freq) * ((len(models)) * -1.0))
         if bpy.context.object.mode == 'EDIT':
             bpy.ops.object.mode_set(mode='OBJECT')
         
