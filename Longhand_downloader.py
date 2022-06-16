@@ -19,6 +19,9 @@ with open(input,'r') as f:
     models = json.load(f)
 {key: value for key, value in sorted(models.items(), key=lambda item: item[1])}
 
+print("Beginning downloads...")
+print("\n")
+
 #iterate over dictionary objects, download and place
 for key,value in models.items():
     if len(value) > 2:

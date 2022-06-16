@@ -5,7 +5,7 @@ from bpy import context
 import json
 
 #declarations
-input = ".../objects.txt"
+input = "..." #objects file output from notebook
 count = 0
 
 #enable critical add-ons
@@ -44,61 +44,85 @@ for key,value in models.items():
         bpy.ops.object.location_clear(clear_delta=False)
         bpy.ops.object.scale_clear(clear_delta=False)
 
-        obj = context.active_object
-        v = obj.data.vertices
+        if Object.type == 'MESH':
+            #obj = context.active_object
+            v = Object.data.vertices
 
-        highest = [v[0].co[0], v[0].co[1], v[0].co[2]]
-        lowest = [v[0].co[0], v[0].co[1], v[0].co[2]]
+            highest = [v[0].co[0], v[0].co[1], v[0].co[2]]
+            lowest = [v[0].co[0], v[0].co[1], v[0].co[2]]
 
-        for v in obj.data.vertices:
-            c = v.co
-            
-            if c[0] > highest[0]:
-                highest[0] = c[0]
-            
-            if c[0] < lowest[0]:
-                lowest[0] = c[0]
-            
-            if c[1] > highest[1]:
-                highest[1] = c[1]
-            
-            if c[1] < lowest[1]:
-                lowest[1] = c[1]
-            
-            if c[2] > highest[2]:
-                highest[2] = c[2]
-            
-            if c[2] < lowest[2]:
-                lowest[2] = c[2]
+            for v in Object.data.vertices:
+                c = v.co
+                
+                if c[0] > highest[0]:
+                    highest[0] = c[0]
+                
+                if c[0] < lowest[0]:
+                    lowest[0] = c[0]
+                
+                if c[1] > highest[1]:
+                    highest[1] = c[1]
+                
+                if c[1] < lowest[1]:
+                    lowest[1] = c[1]
+                
+                if c[2] > highest[2]:
+                    highest[2] = c[2]
+                
+                if c[2] < lowest[2]:
+                    lowest[2] = c[2]
+                    
+            bpy.ops.transform.translate(
+                value=(-0.5*(highest[0]+lowest[0]), -0.5*(highest[1]+lowest[1]), -0.5*(highest[2]+lowest[2])),
+                orient_type='GLOBAL',
+                orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
+                orient_matrix_type='GLOBAL',
+                mirror=True,
+                use_proportional_edit=False,
+                proportional_edit_falloff='SMOOTH',
+                proportional_size=1,
+                use_proportional_connected=False,
+                use_proportional_projected=False
+            )
 
-        bpy.ops.object.origin_set(type='ORIGIN_CURSOR', center='MEDIAN')
+            bpy.ops.object.origin_set(type='ORIGIN_CURSOR', center='MEDIAN')
+            size = [highest[0]-lowest[0], highest[1]-lowest[1],highest[2]-lowest[2]]
+            s = 50/sorted(size)[2] #numerator represents target scale
 
-        size = [highest[0]-lowest[0], highest[1]-lowest[1],highest[2]-lowest[2]]
-
-        s = 50/sorted(size)[2]
-
-        bpy.ops.transform.resize(
-            value=(s, s, s),
-            orient_type='GLOBAL',
-            orient_matrix=((1, 0, 0),(0, 1, 0), (0, 0, 1)),
-            orient_matrix_type='GLOBAL',
-            mirror=True,
-            use_proportional_edit=False,
-            proportional_edit_falloff='SMOOTH',
-            proportional_size=1,
-            use_proportional_connected=False,
-            use_proportional_projected=False
+            bpy.ops.transform.resize(
+                value=(s, s, s),
+                orient_type='GLOBAL',
+                orient_matrix=((1, 0, 0),(0, 1, 0), (0, 0, 1)),
+                orient_matrix_type='GLOBAL',
+                mirror=True,
+                use_proportional_edit=False,
+                proportional_edit_falloff='SMOOTH',
+                proportional_size=1,
+                use_proportional_connected=False,
+                use_proportional_projected=False
+                
         )
         #rescale by relative frequency in corpus
-        Object.scale[0] = .05 * freq
-        Object.scale[1] = .05 * freq
-        Object.scale[2] = .05 * freq
+        Object.scale[0] = freq/10
+        Object.scale[1] = freq/10
+        Object.scale[2] = freq/10
+        
+        #create spiral object for model distribution 
+        bpy.ops.curve.spirals(spiral_type='SPHERE',radius=(50))
+        bpy.context.object.scale[2] = 0.5
+        bpy.context.object.rotation_euler[2] = 1.5 * count
+        bpy.context.object.location[2] = 25
         
         #distribute objects along spiral
         Object.select_set(True)
         Object.constraints.new(type='FOLLOW_PATH')
-        Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
-        Object.constraints["Follow Path"].offset = ((freq) * ((len(models)) * -1.0))
+        
+        if count == 0:
+            Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
+            Object.constraints["Follow Path"].offset = ((100 - freq) * -1.0)
+        elif count > 0:
+            Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".00"+ (str(count))]
+            Object.constraints["Follow Path"].offset = ((100 - freq) * -1.0)
         if bpy.context.object.mode == 'EDIT':
             bpy.ops.object.mode_set(mode='OBJECT')
         
