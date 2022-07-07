@@ -5,13 +5,17 @@ from bpy import context
 import json
 
 #declarations
-input = "..." #objects file output from notebook
+input = "..." #objects textfile output from "Longhand_notebook" script
 count = 0
 
 #enable critical add-ons
 bpy.ops.preferences.addon_enable(module="space_view3d_align_tools")
 bpy.ops.preferences.addon_enable(module="add_curve_extra_objects")
 
+#reposition/increase energy of scene lighting
+light = bpy.data.objects["Light"]
+light.location = (0,0,50)
+light.data.energy = 100000
 
 #create dictionary from objects document
 with open(input,'r') as f: 
@@ -33,7 +37,7 @@ bpy.ops.object.select_all(action='DESELECT')
 for key,value in models.items():
     if len(value) > 2: 
         Object = bpy.data.objects["" + value[1] + ""]
-        print("Located " + (str(Object)))
+        #print("Located " + (str(Object)))
         print("\n")
         freq = (value[0])
         Object.select_set(True)
@@ -103,9 +107,9 @@ for key,value in models.items():
                 
         )
         #rescale by relative frequency in corpus
-        Object.scale[0] = freq/10
-        Object.scale[1] = freq/10
-        Object.scale[2] = freq/10
+        Object.scale[0] = freq/100
+        Object.scale[1] = freq/100
+        Object.scale[2] = freq/100
         
         #create spiral object for model distribution 
         bpy.ops.curve.spirals(spiral_type='SPHERE',radius=(50))
@@ -119,15 +123,18 @@ for key,value in models.items():
         
         if count == 0:
             Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
-            Object.constraints["Follow Path"].offset = ((100 - freq) * -1.0)
-        elif count > 0:
+            Object.constraints["Follow Path"].offset = (freq * -1.0)
+        elif (count > 0) & (count < 10):
             Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".00"+ (str(count))]
-            Object.constraints["Follow Path"].offset = ((100 - freq) * -1.0)
+            Object.constraints["Follow Path"].offset = (freq * -1.0)
+        elif count > 9:
+            Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".0"+ (str(count))]
+            Object.constraints["Follow Path"].offset = (freq * -1.0)
         if bpy.context.object.mode == 'EDIT':
             bpy.ops.object.mode_set(mode='OBJECT')
         
         #print updated attributes console
-        print((str(Object)) + "rescaled to: " + (str(Object.scale)) + " at " + (str(Object.location)))
+        print((str(Object)) + " rescaled to: " + (str(Object.scale)) + " and moved to " + (str(Object.matrix_world.translation)))
         bpy.ops.object.select_all(action='DESELECT')
         count = count + 1
 
@@ -136,6 +143,7 @@ bpy.data.objects["Plane"].select_set(True)
 bpy.ops.wm.add_hubs_component(object_source="object", component_name="skybox")
 bpy.ops.wm.add_hubs_component(object_source="object", component_name="visible")
 bpy.ops.wm.add_hubs_component(object_source="object", component_name="nav-mesh")
+bpy.ops.object.select_all(action='DESELECT')
 
 #update viewport to Top Orthographic perspective
 for area in bpy.context.screen.areas:
@@ -145,3 +153,5 @@ for area in bpy.context.screen.areas:
         bpy.ops.view3d.view_axis(override, type='TOP')
 print("\n")
 print("have a nice day")
+
+
