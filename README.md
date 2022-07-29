@@ -51,11 +51,11 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["An evaluation of Depth Enhancing Perceptual Cues for Vascular Volume Visualization in Neurosurgery”](https://ieeexplore.ieee.org/abstract/document/6620865?casa_token=IvrlmZRQ-J4AAAAA:Me20NjzNmt4e6xe_6PYt51zA91yDYvY8Od1drMeYfJtX-Uo-Vjfp-U_hTkxJue1US9Q6h_s)Kersten-Pertel, Jy-Shyang Chen, and Collins 2012 
 * ["A New Framework for Theory-Based Interaction Design Applied to Serendipitous Information Retrieval"](https://dl.acm.org/doi/abs/10.1145/1352782.1352787?casa_token=fuqwjzCWagwAAAAA:_89FD0Vj44ap0SMjic3dZg1DjoZUcuJCDFG5-eoD7TEQV4pQl4G1fkG2n_oZBufy3-26dlYMt24) De Bruijn & Spence 2008
 
-### Scene Tests
-![Diary entries (art work references)]()
+### Early Scene Tests
+![Diary entries (art work references)](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224212-HDVSCXN0OI7ACCBGYE4A/JRC+ArtWork.png?format=2500w)
 
-![Boston Cooking School cookbook]()
+![Boston Cooking School cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
 
-![Diary entries (all nouns)]()
+![Diary entries (all nouns)](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224310-UHWFZY2U5UAGA8QBR91Y/JRC_allNouns.png?format=2500w)
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
