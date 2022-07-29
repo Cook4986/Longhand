@@ -57,18 +57,19 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 <p align="center">
   Diary entries referencing art work
 </p>
----
+
 
 ![Boston Cooking School cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
 
 <p align="center">
     Boston Cooking Schoool cookbook
 </p>
----
-![Diary entries (all nouns)](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224310-UHWFZY2U5UAGA8QBR91Y/JRC_allNouns.png?format=2500w)
+
+![Diary entries (all nouns)](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=2500w)
 
 <p align="center">
    Diary entries (all nouns)
 </p>
----
+
+
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
