@@ -53,11 +53,23 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 
 ### Test Images
 ![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224212-HDVSCXN0OI7ACCBGYE4A/JRC+ArtWork.png?format=2500w)
+<p align="center">
+    historic diary entries, references to artwork
+</p>
 
 ![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659724203337-GBNFX3MMLMMNUOGGEEE9/ArmyCookbook3.jpg?format=2500w)
+<p align="center">
+    "Manual for Army Cooks"
+</p>
 
 ![diary_nouns](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=2500w)
+<p align="center">
+    historic diary entries, all nouns
+</p>
 
 ![Boston_cooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
+<p align="center">
+    "The Boston Cooking School Cookbook"
+</p>
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
