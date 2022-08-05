@@ -52,6 +52,12 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["A New Framework for Theory-Based Interaction Design Applied to Serendipitous Information Retrieval"](https://dl.acm.org/doi/abs/10.1145/1352782.1352787?casa_token=fuqwjzCWagwAAAAA:_89FD0Vj44ap0SMjic3dZg1DjoZUcuJCDFG5-eoD7TEQV4pQl4G1fkG2n_oZBufy3-26dlYMt24) De Bruijn & Spence 2008
 
 ### Test Images
-![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/3543cdec-7455-4bed-8eb4-55e7c46cb76b/Longhand_Diagram_Cook2022.png?format=2500w](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224212-HDVSCXN0OI7ACCBGYE4A/JRC+ArtWork.png?format=2500w)
+![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224212-HDVSCXN0OI7ACCBGYE4A/JRC+ArtWork.png?format=2500w)
+
+![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659724203337-GBNFX3MMLMMNUOGGEEE9/ArmyCookbook3.jpg?format=2500w)
+
+![diary_nouns](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=2500w)
+
+![Boston_cooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
