@@ -5,7 +5,7 @@ import time
 
 #declarations
 start = time.time()
-input = ".../objects.txt"
+input = "..." #Objects dictionary output from "Longhand_notebook" script
 
 #startup and activate Sketchfab plugin
 bpy.ops.object.delete(use_global=False, confirm=False)
@@ -19,6 +19,7 @@ with open(input,'r') as f:
     models = json.load(f)
 {key: value for key, value in sorted(models.items(), key=lambda item: item[1])}
 
+print("\n")
 print("Beginning downloads...")
 print("\n")
 
@@ -27,7 +28,7 @@ for key,value in models.items():
     if len(value) > 2:
         print(value[1])
         freq = (value[0])
-        print("Represents " + str(value[0]) + "%" + " of objects in scene.")
+        print("Occurs " + str(value[0]) + " in target corpus.")
         query = (value[1])
         print("uid: " + str(value[2]))
         uid = (value[2])
@@ -47,3 +48,5 @@ f.close()
 print("\n")
 print("downloads complete")
 print("\n")
+
+
