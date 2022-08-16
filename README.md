@@ -56,24 +56,34 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["A New Framework for Theory-Based Interaction Design Applied to Serendipitous Information Retrieval"](https://dl.acm.org/doi/abs/10.1145/1352782.1352787?casa_token=fuqwjzCWagwAAAAA:_89FD0Vj44ap0SMjic3dZg1DjoZUcuJCDFG5-eoD7TEQV4pQl4G1fkG2n_oZBufy3-26dlYMt24) De Bruijn & Spence 2008
 
 ### Test Images
-![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098224212-HDVSCXN0OI7ACCBGYE4A/JRC+ArtWork.png?format=2500w)
+![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660659211783-6PMQRSA5076JD9BVLOA8/ArmyCookbook1_reduced.jpg?format=1000w)
 <p align="center">
-    historic diary entries, references to artwork
+    "Manual for Army Cooks" - United States War Department, 1896
 </p>
 
-![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659724203337-GBNFX3MMLMMNUOGGEEE9/ArmyCookbook3.jpg?format=2500w)
+![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=1000w)
 <p align="center">
-    "Manual for Army Cooks"
+    The personal diaries of one J.R. Coolidge - 1921
 </p>
 
-![diary_nouns](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=2500w)
+![UFOs](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658679021-ISG6E85XE5ZKMD8LOYLB/UFO4.png?format=1000w)
 <p align="center">
-    historic diary entries, all nouns
+    Esotericism and UFO Research - Blomquist, 2017
 </p>
 
-![Boston_cooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
+![Boston_cooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658486299-R9RUUMYY4PDFW9CAGWYA/EvidenceLocker.png?format=1000w)
 <p align="center">
-    "The Boston Cooking School Cookbook"
+    "McLennan County Sheriff's Department Inventory of Evidence Locker" - 2021
+</p>
+
+![BostonCooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
+<p align="center">
+    "The Boston Cooking School Cookbook" - Farmer, 1896
+</p>
+
+![Religion](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658664190-4UL3TUOLIOCXB1AV7PGN/Religion2_reduced.jpg?format=1000w)
+<p align="center">
+    Comparative religion and the religion of the future - Martin 1926
 </p>
 
 Matt Cook [mncook.net](https://www.mncook.net/)- 2022
