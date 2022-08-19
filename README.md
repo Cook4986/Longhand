@@ -1,5 +1,5 @@
 # **Longhand** #
-Longhand is a word cloud generator, but the words are 3D models projected in 360 degrees around the user. Longhand allows non-technical end users to explore unwieldy text corpora (including in VR) earlier in the research lifecycle. Longhand is an extension of Mike Hucka's [HandPrint](https://github.com/caltechlibrary/handprint) tool and subsequent data management efforts by Harvard Library, including the [SAEF_OCR](https://github.com/Cook4986/SAEF_OCR) project.
+Longhand is a word cloud generator, but the words are 3D models projected in 360 degrees around the user. Longhand allows non-technical researchers to explore unwieldy text corpora (including in VR) earlier in the research lifecycle. Longhand is an extension of Mike Hucka's [HandPrint](https://github.com/caltechlibrary/handprint) tool and subsequent data management efforts by Harvard Library, including the [SAEF_OCR](https://github.com/Cook4986/SAEF_OCR) project.
 
 ![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/3543cdec-7455-4bed-8eb4-55e7c46cb76b/Longhand_Diagram_Cook2022.png?format=2500w)
 
