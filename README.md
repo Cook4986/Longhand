@@ -18,8 +18,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 
 ### Benefits
 * Supports “raw” text input data
-* Represents tokens as 3D objects, which are recognizable at a glance from novel perspectives.
-  * From DiCarlo and Cox (2017): The human visual system has "...the ability to rapidly report object identity or category after just a single brief glimpse of visual input." 
+* Represents tokens as 3D objects, which are recognizable in a cluttered scene and from novel perspectives.
 * Leverages large, existing 3D asset collections (i.e. Sketchfab)
 * Exposes text-centric fields to the benefits of XR, like:
   * Depth-of-field
