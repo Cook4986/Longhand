@@ -72,14 +72,14 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
     Esotericism and UFO Research - Blomquist, 2017
 </p>
 
-![Boston_cooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658486299-R9RUUMYY4PDFW9CAGWYA/EvidenceLocker.png?format=1000w)
+![Evidence Locker](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658486299-R9RUUMYY4PDFW9CAGWYA/EvidenceLocker.png?format=1000w)
 <p align="center">
     "McLennan County Sheriff's Department Inventory of Evidence Locker" - 2021
 </p>
 
-![BostonCooking](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659098222849-RLADGE36KJTNXLQIW7E0/Boston+Cooking+School_1.png?format=2500w)
+![Kitchen Science](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658729701-CVTCDPVXXJO6NKVBL7V8/ScienceInKitchen_reduced.jpg?format=2500w)
 <p align="center">
-    "The Boston Cooking School Cookbook" - Farmer, 1896
+    "Science in the Kitchen" - Kellogg, 1904
 </p>
 
 ![Religion](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658664190-4UL3TUOLIOCXB1AV7PGN/Religion2_reduced.jpg?format=1000w)
