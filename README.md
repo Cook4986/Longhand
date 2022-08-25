@@ -19,10 +19,10 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 ### Benefits
 * Supports “raw” text input data
 * Represents tokens as 3D objects, which are recognizable in a cluttered scene and from novel perspectives.
-* Leverages large, existing 3D asset collections (i.e. Sketchfab)
+* Leverages existing asset collection (Sketchfab) as object dictionary
 * Exposes text-centric fields to the benefits of XR, like:
-  * Depth-of-field
-  * Embodied interactivity
+  * Voluminous data field, with depth cues
+  * Embodied (i.e. tracked) interfacing
 ### Limitations
 * Best for nouns (i.e. things) in the corpus
 * Proprietary HTR (Amazon, Google, Microsoft)
