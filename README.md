@@ -21,8 +21,8 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * Represents tokens as 3D objects, which are recognizable in a cluttered scene and from novel perspectives.
 * Leverages existing asset collection (Sketchfab) as object dictionary
 * Exposes text-centric fields to the benefits of XR, like:
-  * Voluminous data field, with depth cues
-  * Embodied (i.e. tracked) interfacing
+  * 3D virtual environments are high-volume representation space, with depth cues
+  * Tracked HMDs allow for highly intutive, embodied interfacing 
 ### Limitations
 * Best for nouns (i.e. things) in the corpus
 * Proprietary HTR (Amazon, Google, Microsoft)
