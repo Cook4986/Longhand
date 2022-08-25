@@ -57,22 +57,22 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["Untangling invariant object recognition"] (https://www.sciencedirect.com/science/article/pii/S1364661307001593?casa_token=lWMfVNGhvZ8AAAAA:4brcwp3c0TCZgmV_oDi8xCx8Ia05pP6ZZp50TIuIP3u5f_hLvCkrrX4e5YvVBDPAr5C921VQD4Or) DiCarlo & Cox 2007
 
 ### Test Images
-![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660659211783-6PMQRSA5076JD9BVLOA8/ArmyCookbook1_reduced.jpg?format=1000w)
+![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1661432668499-62IS6NY8BWV4M8HCUS2S/ArmyCookbook3.jpg?format=2500w)
 <p align="center">
     "Manual for Army Cooks" - United States War Department, 1896
 </p>
 
-![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=1000w)
+![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=2500w)
 <p align="center">
     The personal diaries of one J.R. Coolidge - 1921
 </p>
 
-![UFOs](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658679021-ISG6E85XE5ZKMD8LOYLB/UFO4.png?format=1000w)
+![UFOs](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658679021-ISG6E85XE5ZKMD8LOYLB/UFO4.png?format=2500w)
 <p align="center">
     Esotericism and UFO Research - Blomquist, 2017
 </p>
 
-![Evidence Locker](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658486299-R9RUUMYY4PDFW9CAGWYA/EvidenceLocker.png?format=1000w)
+![Evidence Locker](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658486299-R9RUUMYY4PDFW9CAGWYA/EvidenceLocker.png?format=2500w)
 <p align="center">
     "McLennan County Sheriff's Department Inventory of Evidence Locker" - 2021
 </p>
@@ -82,7 +82,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
     "Science in the Kitchen" - Kellogg, 1904
 </p>
 
-![Religion](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658664190-4UL3TUOLIOCXB1AV7PGN/Religion2_reduced.jpg?format=1000w)
+![Religion](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1661432283094-SCA5FV9KJDNNS2VTSRNL/Religion.jpg?format=2500w)
 <p align="center">
     Comparative religion and the religion of the future - Martin 1926
 </p>
