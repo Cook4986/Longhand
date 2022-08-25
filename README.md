@@ -54,7 +54,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * ["Peripheral vision and pattern recognition: A review”](https://jov.arvojournals.org/article.aspx?articleid=2191825) Strasburger, Rentschler, and Juttner 2010
 * ["An evaluation of Depth Enhancing Perceptual Cues for Vascular Volume Visualization in Neurosurgery”](https://ieeexplore.ieee.org/abstract/document/6620865?casa_token=IvrlmZRQ-J4AAAAA:Me20NjzNmt4e6xe_6PYt51zA91yDYvY8Od1drMeYfJtX-Uo-Vjfp-U_hTkxJue1US9Q6h_s)Kersten-Pertel, Jy-Shyang Chen, and Collins 2012 
 * ["A New Framework for Theory-Based Interaction Design Applied to Serendipitous Information Retrieval"](https://dl.acm.org/doi/abs/10.1145/1352782.1352787?casa_token=fuqwjzCWagwAAAAA:_89FD0Vj44ap0SMjic3dZg1DjoZUcuJCDFG5-eoD7TEQV4pQl4G1fkG2n_oZBufy3-26dlYMt24) De Bruijn & Spence 2008
-* ["Untangling invariant object recognition"] (https://www.sciencedirect.com/science/article/pii/S1364661307001593?casa_token=lWMfVNGhvZ8AAAAA:4brcwp3c0TCZgmV_oDi8xCx8Ia05pP6ZZp50TIuIP3u5f_hLvCkrrX4e5YvVBDPAr5C921VQD4Or) DiCarlo & Cox 2007
+* ["Untangling invariant object recognition"](https://www.sciencedirect.com/science/article/pii/S1364661307001593?casa_token=lWMfVNGhvZ8AAAAA:4brcwp3c0TCZgmV_oDi8xCx8Ia05pP6ZZp50TIuIP3u5f_hLvCkrrX4e5YvVBDPAr5C921VQD4Or) DiCarlo & Cox 2007
 
 ### Test Images
 ![army_cookbook](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1661432668499-62IS6NY8BWV4M8HCUS2S/ArmyCookbook3.jpg?format=2500w)
