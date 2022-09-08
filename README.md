@@ -62,17 +62,17 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
     "Manual for Army Cooks" - United States War Department, 1896
 </p>
 
-![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1659099069651-WCYENKMCF5OOF66CXYK3/JRC_nouns.png?format=2500w)
+![diary entries1](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1661432292723-RU4N3YH2O0FKEKGLX2M5/JRC_nouns.png?format=2500w)
 <p align="center">
     The personal diaries of one J.R. Coolidge - 1921
 </p>
 
-![UFOs](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658679021-ISG6E85XE5ZKMD8LOYLB/UFO4.png?format=2500w)
+![UFOs](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1661432292310-KZSP4M44KRGV44ISASII/UFO4.png?format=2500w)
 <p align="center">
     Esotericism and UFO Research - Blomquist, 2017
 </p>
 
-![Evidence Locker](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1660658486299-R9RUUMYY4PDFW9CAGWYA/EvidenceLocker.png?format=2500w)
+![Evidence Locker](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/1661432289267-K53OSB5EAFVLKSRH2I8G/EvidenceLocker.png?format=2500w)
 <p align="center">
     "McLennan County Sheriff's Department Inventory of Evidence Locker" - 2021
 </p>
