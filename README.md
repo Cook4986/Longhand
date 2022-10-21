@@ -32,6 +32,7 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * Upgrade model distribution function in "Longhand_aligner.py" script
 * Automate GLB file hosting (AWS?) for easier Hubs integration
 ### Core Technologies
+ * [Python](https://www.python.org/)(version: 3.8)
  * [HandPrint](https://github.com/caltechlibrary/handprint)(version: 1.5.1)
  * [SpaCy](https://github.com/explosion/spaCy)(3.2.1)
  * [Sketchfab data API, V3](https://docs.sketchfab.com/data-api/v3/index.html)
