@@ -9,8 +9,9 @@ input = "..." #Objects dictionary output from "Longhand_notebook" script
 
 #startup and activate Sketchfab plugin
 bpy.ops.object.delete(use_global=False, confirm=False)
-bpy.data.window_managers["WinMan"].sketchfab_api.email = "..."
-bpy.data.window_managers["WinMan"].sketchfab_api.password = "..."
+bpy.data.window_managers["WinMan"].addon_search = "sket"
+bpy.data.window_managers["WinMan"].sketchfab_api.use_mail = False
+bpy.data.window_managers["WinMan"].sketchfab_api.api_token = "..."
 bpy.ops.wm.skfb_enable(enable=True)
 bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportBoolean = True
 
@@ -18,7 +19,6 @@ bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportBoolean = True
 with open(input,'r') as f: 
     models = json.load(f)
 {key: value for key, value in sorted(models.items(), key=lambda item: item[1])}
-
 print("\n")
 print("Beginning downloads...")
 print("\n")
@@ -26,11 +26,11 @@ print("\n")
 #iterate over dictionary objects, download and place
 for key,value in models.items():
     if len(value) > 2:
-        print(value[1])
+        print("Downloading: " + str(value[1]))
         freq = (value[0])
-        print("Occurs " + str(value[0]) + " in target corpus.")
+        print('"'+ str(key) + '"' + " occurs " + str(value[0]) + " times in target corpus.")
         query = (value[1])
-        print("uid: " + str(value[2]))
+        print("face count: " + str(value[4]))
         uid = (value[2])
         url = (value[3])
         bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportPath = str(url)
@@ -45,6 +45,7 @@ bpy.context.view_layer.update()
 bpy.ops.object.select_all(action='DESELECT')
 f.close()
 
+context.scene.cursor.location = [0.0, 0.0, 0.0]
 print("\n")
 print("downloads complete")
 print("\n")
