@@ -5,7 +5,7 @@ from bpy import context
 import json
 
 #declarations
-input = "..." #objects textfile output from "Longhand_notebook" script
+input = "...txt" #objects textfile output from "Longhand_notebook" script
 count = 0
 tokens = 0
 
@@ -116,17 +116,17 @@ for key,value in models.items():
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
         Object.constraints["Follow Path"].offset = (freq * -1.0)
          #rescale by relative frequency in corpus
-        Object.scale = Object.scale * ((freq/tokens) * 3)
+        Object.scale = Object.scale * (freq/tokens)
         
     elif (count > 0) & (count < 10):
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".00"+ (str(count))]
         Object.constraints["Follow Path"].offset = (freq * -1.0)
-        Object.scale = Object.scale * ((freq/tokens) * 3) 
+        Object.scale = Object.scale * (freq/tokens) 
         
     elif count > 9:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".0"+ (str(count))]
         Object.constraints["Follow Path"].offset = (freq * -1.0)
-        Object.scale = Object.scale * ((freq/tokens) * 3) 
+        Object.scale = Object.scale * (freq/tokens)
         
     if bpy.context.object.mode == 'EDIT':
         bpy.ops.object.mode_set(mode='OBJECT')
