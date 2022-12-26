@@ -1,21 +1,24 @@
-#exports glb from Blender scene for use in Mozilla Hubs
+#exports Blender scene to Sketchfab
 import bpy
 import time
 import os
+from pathlib import Path
 
-secs = time.localtime()
+#ensure max output size is 100MB
+input = ".../Longhand/Objects" #Objects dictionary output from "Longhand_notebook" script
+for path in sorted(Path(input).rglob('*.txt')):
+    if "_log" not in str(path):
+        print("Working from " + str(path))
+        name = str(path.stem)
 
 #declarations
-bpy.ops.object.select_all(action='SELECT')
-view_layer = bpy.context.view_layer
-obj_active = view_layer.objects.active
-selection = bpy.context.selected_objects
-outPath = ".../outputs" + str(time.asctime(secs))
+secs = time.localtime()
+outPath = name + " longhandTest_" + str(time.asctime(secs))
 
-for obj in selection:
-    obj.select_set(True)
-    view_layer.objects.active = obj
-    bpy.ops.export_scene.gltf(filepath=outPath + ".GLB", use_visible=True)
-    obj.select_set(False)
+#sketchfab plugin exporter
+bpy.data.window_managers["WinMan"].sketchfab_export.draft = False
+bpy.data.window_managers["WinMan"].sketchfab_export.private = False
+bpy.data.window_managers["WinMan"].sketchfab_export.title = outPath
+bpy.ops.wm.sketchfab_export()
 
 print("have a nice day")
