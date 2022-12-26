@@ -3,11 +3,18 @@
 import bpy
 from bpy import context
 import json
+from pathlib import Path
 
-#declarations
-input = "...txt" #objects textfile output from "Longhand_notebook" script
 count = 0
 tokens = 0
+
+#I/O
+target = ".../Longhand/Objects" #Objects dictionary output from "Longhand_notebook" script
+for path in sorted(Path(target).rglob('*.txt')):
+    if "_log" not in str(path):
+        print("Working from " + str(path))
+        input = str(path)
+        name = str(path.stem)
 
 #enable critical add-ons
 bpy.ops.preferences.addon_enable(module="space_view3d_align_tools")
@@ -35,6 +42,7 @@ for key,value in models.items():
     Object = bpy.data.objects["" + value[1] + ""]
     #print("Located " + (str(Object)))
     print("\n")
+    volume = (len(models.items()))
     freq = (value[0])
     Object.select_set(True)
     
@@ -114,18 +122,18 @@ for key,value in models.items():
     
     if count == 0:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
-        Object.constraints["Follow Path"].offset = (freq * -1.0)
+        Object.constraints["Follow Path"].offset = (freq * (-5/volume))
          #rescale by relative frequency in corpus
         Object.scale = Object.scale * (freq/tokens)
         
     elif (count > 0) & (count < 10):
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".00"+ (str(count))]
-        Object.constraints["Follow Path"].offset = (freq * -1.0)
-        Object.scale = Object.scale * (freq/tokens) 
+        Object.constraints["Follow Path"].offset = (freq * (-5/volume))
+        Object.scale = Object.scale * (freq/tokens)
         
     elif count > 9:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".0"+ (str(count))]
-        Object.constraints["Follow Path"].offset = (freq * -1.0)
+        Object.constraints["Follow Path"].offset = (freq * (-5/volume))
         Object.scale = Object.scale * (freq/tokens)
         
     if bpy.context.object.mode == 'EDIT':
@@ -138,9 +146,23 @@ for key,value in models.items():
 
 #add Hubs components to surface plane
 bpy.data.objects["Plane"].select_set(True)
-bpy.ops.wm.add_hubs_component(panel_type="object", component_name="skybox")
-bpy.ops.wm.add_hubs_component(panel_type="object", component_name="visible")
-bpy.ops.wm.add_hubs_component(panel_type="object", component_name="nav-mesh")
+bpy.ops.wm.add_hubs_component(component_name="skybox")
+bpy.ops.wm.add_hubs_component(component_name="visible")
+bpy.ops.wm.add_hubs_component(component_name="nav-mesh")
+bpy.ops.object.select_all(action='DESELECT')
+
+#create and place 3D text object with volume name
+bpy.ops.object.select_all(action='DESELECT')
+font_curve = bpy.data.curves.new(type="FONT", name="Font Curve")
+font_curve.body = name
+font_obj = bpy.data.objects.new(name="Font Object", object_data=font_curve)
+bpy.context.scene.collection.objects.link(font_obj)
+font_obj.data.extrude = 0.1
+font_obj.data.size = 10.0
+font_obj.rotation_euler[0] = 2
+font_obj.rotation_euler[2] = -0.35
+font_obj.location[1] = 30
+font_obj.location[2] = 30
 bpy.ops.object.select_all(action='DESELECT')
 
 #update viewport to Top Orthographic perspective
@@ -151,3 +173,5 @@ for area in bpy.context.screen.areas:
         bpy.ops.view3d.view_axis(override, type='TOP')
 print("\n")
 print("have a nice day")
+
+
