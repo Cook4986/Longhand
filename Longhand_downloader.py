@@ -2,17 +2,26 @@
 import bpy
 import json
 import time
+import os
+from pathlib import Path
 
-#declarations
+#I/O
 start = time.time()
-input = "..." #Objects dictionary output from "Longhand_notebook" script
+target = "/.../Longhand/Objects" #Objects dictionary output from "Longhand_notebook" script
+for path in sorted(Path(target).rglob('*.txt')):
+    if "_log" not in str(path):
+        print("\n")
+        print("Working from " + str(path))
+        print("\n")
+        input = str(path)
 
-#startup and activate Sketchfab plugin
+#prep scene
 bpy.ops.object.delete(use_global=False, confirm=False)
+bpy.ops.wm.skfb_enable(enable=True)
 bpy.data.window_managers["WinMan"].addon_search = "sket"
 bpy.data.window_managers["WinMan"].sketchfab_api.use_mail = False
 bpy.data.window_managers["WinMan"].sketchfab_api.api_token = "..."
-bpy.ops.wm.skfb_enable(enable=True)
+bpy.ops.wm.sketchfab_login(authenticate=True)
 bpy.data.window_managers["WinMan"].sketchfab_browser.manualImportBoolean = True
 
 #open and sort objects dict
