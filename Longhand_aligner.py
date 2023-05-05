@@ -4,6 +4,7 @@ import bpy
 from bpy import context
 import json
 from pathlib import Path
+import random
 
 count = 0
 tokens = 0
@@ -46,7 +47,7 @@ for key,value in models.items():
     freq = (value[0])
     Object.select_set(True)
     
-    #normalize object scale script from Athanaze (https://github.com/Athanaze/Blender-Normalize-Object)
+    #normalize object scale script, modified from Athanaze (https://github.com/Athanaze/Blender-Normalize-Object)
     context.scene.cursor.location = [0.0, 0.0, 0.0]
     bpy.ops.object.rotation_clear(clear_delta=False)
     bpy.ops.object.location_clear(clear_delta=False)
@@ -113,28 +114,35 @@ for key,value in models.items():
     #create spiral object for model distribution 
     bpy.ops.curve.spirals(spiral_type='SPHERE',radius=(50))
     bpy.context.object.scale[2] = 0.5
-    bpy.context.object.rotation_euler[2] = 1.5 * count
+    rotator = random.randint(1,360000)
+    bpy.context.object.rotation_euler[2] = rotator
+    print("rotator = " + str(rotator))
     bpy.context.object.location[2] = 25
-    
     #distribute objects along spiral
     Object.select_set(True)
     Object.constraints.new(type='FOLLOW_PATH')
     
     if count == 0:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
-        Object.constraints["Follow Path"].offset = (freq * (-5/volume))
+        elevator = random.randint(3,5)
+        Object.constraints["Follow Path"].offset = (elevator * -1)
+        print("elevator = " + str(elevator))
          #rescale by relative frequency in corpus
-        Object.scale = Object.scale * (freq/tokens)
+        Object.scale = Object.scale * (freq/tokens) * 10
         
     elif (count > 0) & (count < 10):
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".00"+ (str(count))]
-        Object.constraints["Follow Path"].offset = (freq * (-5/volume))
-        Object.scale = Object.scale * (freq/tokens)
+        elevator = random.randint(5,20)
+        Object.constraints["Follow Path"].offset = (elevator * -1)
+        print("elevator = " + str(elevator))
+        Object.scale = Object.scale * (freq/tokens) * 10
         
     elif count > 9:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".0"+ (str(count))]
-        Object.constraints["Follow Path"].offset = (freq * (-5/volume))
-        Object.scale = Object.scale * (freq/tokens)
+        elevator = random.randint(15,75)
+        Object.constraints["Follow Path"].offset = (elevator * -1)
+        print("elevator = " + str(elevator))
+        Object.scale = Object.scale * (freq/tokens) * 10
         
     if bpy.context.object.mode == 'EDIT':
         bpy.ops.object.mode_set(mode='OBJECT')
@@ -142,6 +150,8 @@ for key,value in models.items():
     #print updated attributes console
     print((str(Object)) + " rescaled to: " + (str(Object.scale)) + " and moved to " + (str(Object.matrix_world.translation)))
     bpy.ops.object.select_all(action='DESELECT')
+    elevator = 0
+    rotator = 0
     count = count + 1
 
 #add Hubs components to surface plane
@@ -160,8 +170,9 @@ bpy.context.scene.collection.objects.link(font_obj)
 font_obj.data.extrude = 0.1
 font_obj.data.size = 10.0
 font_obj.rotation_euler[0] = 2
-font_obj.rotation_euler[2] = -0.35
-font_obj.location[1] = 30
+font_obj.rotation_euler[2] = 40.0
+font_obj.location[1] = -25
+font_obj.location[1] = -70
 font_obj.location[2] = 30
 bpy.ops.object.select_all(action='DESELECT')
 
