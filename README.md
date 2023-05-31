@@ -1,7 +1,7 @@
 # **Longhand** #
 Longhand is a word cloud generator, but the words are 3D models deployed in virtual reality.  The models chosen represent text tokens in a corpus. Longhand exposes text-centric researchers to the specific benefits of immersive visualization, including environmental depth cues and embodiment interfacing. The tool was envisioned as an opportunity for non-technical scholars to engage quickly in exploratory analysis - to glimpse the contents of a text corpus and generate research questions - without going down the rabbit hole of software development.
 
-![throughput diagram](https://images.squarespace-cdn.com/content/v1/532b70b6e4b0dca092974dbe/eda8800f-131d-4551-b3c9-343e3041d784/longhandThrougput_updated.png?format=2500w)
+![throughput diagram](https://github.com/Cook4986/Longhand/blob/main/Longhand_Throughput_2023.png)
 
 While objects of study associated with academic disciplines “whose primary dimensions are spatial” (i.e. STEM) are regularly deployed in virtual reality (VR) to support research and instruction, immersive visualization technology has yet to see consistent uptake in text-centric humanities, like History, Philosophy, and Literature. This is due in part to the nature and quality of source material, which often defies visualization; transcends media; and precludes close reading by virtue of sheer scale. That's where Longhand comes in.
 
