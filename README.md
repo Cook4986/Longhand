@@ -1,11 +1,11 @@
 # **Longhand** #
-Longhand is a word cloud generator, but the words are 3D models deployed in virtual reality.  The models chosen represent text tokens in a corpus. Longhand exposes text-centric researchers to the specific benefits of immersive visualization, including environmental depth cues and embodiment interfacing. The tool was envisioned as an opportunity for non-technical scholars to engage quickly in exploratory analysis - to glimpse the contents of a text corpus and generate research questions - without going down the rabbit hole of software development.
+Longhand is a word cloud generator, but the words are 3D models deployed around the user in virtual reality. The models chosen (and their placement)  represent text token frequencies in a target corpus. Longhand exposes text-centric researchers to the specific benefits of immersive visualization, including environmental depth cues and embodiment interfacing. 
 
 ![throughput diagram](https://github.com/Cook4986/Longhand/blob/main/Longhand_Throughput_2023.png)
 
 While objects of study associated with academic disciplines “whose primary dimensions are spatial” (i.e. STEM) are regularly deployed in virtual reality (VR) to support research and instruction, immersive visualization technology has yet to see consistent uptake in text-centric humanities, like History, Philosophy, and Literature. This is due in part to the nature and quality of source material, which often defies visualization; transcends media; and precludes close reading by virtue of sheer scale. That's where Longhand comes in.
 
-Beginning with the notebook script ("Longhand_notebook"), Longhand inputs a plain text ["bag of words"-type](https://en.wikipedia.org/wiki/Bag-of-words_model) document. That document is subjected to natural language processing, via [SpaCy](https://spacy.io/), whereby a researcher can customize the script to specify target parts-of-speech (e.g. nouns) or [named entity types](https://github.com/mchesterkadwell/named-entity-recognition), like plants, locations, objects, and events. Once the bag-of-words has been parsed by chosen sub-type, the "x" (number of) most common words are added to a dictionary of lists, in order, based their relative frequency in the transcribed corpus. That frequency is included in a second output document ("...objects.txt" output) along with urls, 3d model names, UIDs, and ply counts, all generated via the [Sketchfab API.](https://sketchfab.com/developers/data-api/v3)
+Longhand inputs a plain text ["bag of words"](https://en.wikipedia.org/wiki/Bag-of-words_model). That document is subjected to natural language processing, via [SpaCy](https://spacy.io/), whereby a researcher can customize the script to specify target parts-of-speech (e.g. nouns) or [named entity types](https://github.com/mchesterkadwell/named-entity-recognition), like plants, locations, objects, and events. Once the bag-of-words has been parsed , the "x" (number of) most common words are added to a dictionary of lists based their relative frequency in the transcribed corpus. That frequency is included in a second output document ("...objects.txt" output) along with urls, 3d model names, UIDs, and poly counts, all generated via the [Sketchfab API.](https://sketchfab.com/developers/data-api/v3). The dictionary and included values are used to place objects in a Blender scene, which can be exported for display to one of many avaialble metaverse creation tools (Hubs, Spatial, Frame, etc.) as a multi-user virtual environment to support for virtual exploration by distributed teams of digital humanists
 
 The movitation for developing Longhand was an ongoing pattern of interrelated technology consultations, taking place in ["an academic library setting"](https://library.harvard.edu/how-to/digital-scholarship-program). In all cases, consultees are working with voluminous, sometimes handwritten text materials from multiple sources but lacked the programming background to effectively analyze their large-scale material collections using digital humanities methodologies associated with NLP. Longhand was designed to provide these non-technical researchers a sense of what they have; to virtually explore the contents of their heretofore opaque corpora, and to do so naturalistically, as embodied agents traversing a virtual research environment populated with 3D objects.
 
@@ -14,7 +14,7 @@ The movitation for developing Longhand was an ongoing pattern of interrelated te
 ["First year of Astounding Stories (now Analog) sci-fi magazine"](https://sketchfab.com/HarvardLibrary/collections/astounding-stories-1930-5eeb4b0a8ce34d38b44a1460f08fc953)
 
 ### Usage
-Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipynb](https://github.com/Cook4986/Longhand/blob/main/Longhand_notebook.ipynb) to generate "objects" documents in the target working directory. The notebook concludes with a terminal command that will launch Blender and run the first of three Blender Python ("bpy") scripts, [Longhand_downloader.py](https://github.com/Cook4986/Longhand/blob/main/Longhand_downloader.py). Once the Blender GUI launches, and the scene is populated with 3D models from the objects.txt doc, use [the Blender text editor](https://docs.blender.org/manual/en/2.79/editors/text_editor.html) run the [Longhand_aligner.py](https://github.com/Cook4986/Longhand/blob/main/Longhand_aligner.py) and [Longhand_exporter.py](https://github.com/Cook4986/Longhand/blob/main/Longhand_exporter.py), in sequence, to generate a binarized [.GLB](https://en.wikipedia.org/wiki/GlTF) file, which includes model textures and can be uploaded to one of many avaialble metaverse creation tools (Hubs, Spatial, Frame, etc.) as a multi-user virtual environment to support for virtual exploration by distributed teams of digital humanists.
+Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipynb](https://github.com/Cook4986/Longhand/blob/main/Longhand_notebook.ipynb) to generate "objects" documents in the target working directory. The notebook concludes with a terminal command that will launch Blender and run the first of three Blender Python ("bpy") scripts, [Longhand_downloader.py](https://github.com/Cook4986/Longhand/blob/main/Longhand_downloader.py). Once the Blender GUI launches, and the scene is populated with 3D models from the objects.txt doc, use [the Blender text editor](https://docs.blender.org/manual/en/2.79/editors/text_editor.html) run the [Longhand_aligner.py](https://github.com/Cook4986/Longhand/blob/main/Longhand_aligner.py) and [Longhand_exporter.py](https://github.com/Cook4986/Longhand/blob/main/Longhand_exporter.py), in sequence, to generate a binarized [.GLB](https://en.wikipedia.org/wiki/GlTF) file, which includes model textures.
 
 #### Usage Notes:
 * Lists, inventories, genre fiction, and recipes are all ideal content for Longhand visualization as they aren't centered on inherently ambiguous language. Conversely, emotionally grounded literature and fiction (for example) is inherently ambiguous with regards to visual comprehension. These materials may benefit from a (now-deprecated) named entity recognition (NER) branch of Longhand.
@@ -26,14 +26,13 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 * Exposes text-centric fields to the benefits of XR, like:
   * Volumetric (i.e. 3D) representation space, with depth cues
   * Tracked HMDs allow for highly intutive, embodied interfacing 
-### Limitations
-* Best for nouns (i.e. things) in the corpus
-* Proprietary HTR (Amazon, Google, Microsoft)
-* Model placement in scene is work-in-progress 
 ### Next Steps
-* Link with [SAEF repo](https://github.com/Cook4986/SAEF_OCR)
-* Upgrade model distribution function in "Longhand_aligner.py" script
-* Automate GLB file hosting (AWS?) for easier Hubs integration
+* Model collision detection
+* collect/deploy image covers
+* >100MB automatic decimation
+* Streamlit deployment
+* text-to-3D (AI) for Longhand 2.0
+* DearPyGUI
 ### Core Technologies
  * [Python](https://www.python.org/)(version: 3.8)
  * [HandPrint](https://github.com/caltechlibrary/handprint)(version: 1.5.1)
