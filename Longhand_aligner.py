@@ -10,7 +10,7 @@ count = 0
 tokens = 0
 
 #I/O
-target = ".../Longhand/Objects" #Objects dictionary output from "Longhand_notebook" script
+target = ".../Longhand/Objects" #Objects directory
 for path in sorted(Path(target).rglob('*.txt')):
     if "_log" not in str(path):
         print("Working from " + str(path))
@@ -121,34 +121,38 @@ for key,value in models.items():
     #distribute objects along spiral
     Object.select_set(True)
     Object.constraints.new(type='FOLLOW_PATH')
-    
+
+    #place object on spiral and rescale
+    print(str(Object))
     if count == 0:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"]
         elevator = random.randint(3,5)
         Object.constraints["Follow Path"].offset = (elevator * -1)
         print("elevator = " + str(elevator))
-         #rescale by relative frequency in corpus
-        Object.scale = Object.scale * (freq/tokens) * 10
+        #rescale by relative frequency in corpus
+        Object.scale = Object.scale * (freq/tokens)
+        print("New scale = ", str(Object.scale))
         
     elif (count > 0) & (count < 10):
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".00"+ (str(count))]
         elevator = random.randint(5,20)
         Object.constraints["Follow Path"].offset = (elevator * -1)
         print("elevator = " + str(elevator))
-        Object.scale = Object.scale * (freq/tokens) * 10
-        
+        Object.scale = Object.scale * (freq/tokens)
+        print("New scale = ", str(Object.scale))
+
     elif count > 9:
         Object.constraints["Follow Path"].target = bpy.data.objects["Spiral"+".0"+ (str(count))]
         elevator = random.randint(15,75)
         Object.constraints["Follow Path"].offset = (elevator * -1)
         print("elevator = " + str(elevator))
-        Object.scale = Object.scale * (freq/tokens) * 10
+        Object.scale = Object.scale * (freq/tokens)
+        print("New scale = ", str(Object.scale))
         
     if bpy.context.object.mode == 'EDIT':
         bpy.ops.object.mode_set(mode='OBJECT')
     
     #print updated attributes console
-    print((str(Object)) + " rescaled to: " + (str(Object.scale)) + " and moved to " + (str(Object.matrix_world.translation)))
     bpy.ops.object.select_all(action='DESELECT')
     elevator = 0
     rotator = 0
