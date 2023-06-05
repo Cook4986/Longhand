@@ -28,11 +28,12 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
   * Tracked HMDs allow for highly intutive, embodied interfacing 
 ### Next Steps
 * Model collision detection
-* collect/deploy image covers
+* Collect/deploy image covers
 * 100MB max, automatic decimation
 * Streamlit deployment
-* text-to-3D (AI) for Longhand 2.0
-* DearPyGUI
+* Text-to-3D (AI) for Longhand 2.0
+  * e.g. [Stable Dreamfusion]("https://github.com/ashawkey/stable-dreamfusion")
+* DearPyGUI-based interfacing
 ### Core Technologies
  * [Python](https://www.python.org/)(version: 3.8)
  * [HandPrint](https://github.com/caltechlibrary/handprint)(version: 1.5.1)
