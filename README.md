@@ -7,7 +7,7 @@ While objects of study associated with academic disciplines “whose primary dim
 
 Longhand inputs a plain text ["bag of words"](https://en.wikipedia.org/wiki/Bag-of-words_model). That document is subjected to natural language processing. Once the bag-of-words has been parsed , the "x" (number of) most common words are added to a dictionary of lists based their relative frequency in the transcribed corpus. That frequency is included in a second output document ("...objects.txt" output) along with urls, 3d model names, UIDs, and poly counts, all generated via the [Sketchfab API](https://sketchfab.com/developers/data-api/v3). The dictionary and included values are used to place objects in a Blender scene, which can be exported for display to one of many avaialble metaverse creation tools (Hubs, Spatial, Frame, etc.) as a multi-user virtual environment to support for virtual exploration by teams of digital humanists.
 
-The movitation for developing Longhand was a pattern technology consultations taking place in [an academic library](https://library.harvard.edu/how-to/digital-scholarship-program). In all cases, consultees are working with voluminous, sometimes handwritten text materials from multiple sources but lacked the programming background to effectively analyze their large-scale material collections using digital humanities methodologies associated with NLP. Longhand was designed to provide these non-technical researchers a sense of what they have; to virtually explore the contents of their heretofore opaque corpora, and to do so naturalistically, as embodied agents traversing a virtual research environment populated with 3D objects.
+The movitation for developing Longhand was a pattern of technology consultations taking place in [an academic library](https://library.harvard.edu/how-to/digital-scholarship-program). In all cases, consultees are working with voluminous, sometimes handwritten text materials from multiple sources but lacked the programming background to effectively analyze their large-scale material collections using digital humanities methodologies associated with NLP. Longhand was designed to provide these non-technical researchers a sense of what they have; to virtually explore the contents of their heretofore opaque corpora, and to do so naturalistically, as embodied agents traversing a virtual research environment populated with 3D objects.
 
  ![](https://github.com/Cook4986/Longhand/blob/main/Longhand_gif_AmazingStories.gif)
 
@@ -22,11 +22,12 @@ Customize "declarations" and "input/output" lines in the [Longhand_notebook.ipyn
 ### Benefits
 * Supports “raw” text input data
 * Represents tokens as 3D objects, which are recognizable in a cluttered scene and from novel perspectives.
-* Leverages existing asset collection (Sketchfab) as object dictionary
+* Leverages existing asset collection (Sketchfab) as an object dictionary
 * Exposes text-centric fields to the benefits of XR, like:
   * Volumetric (i.e. 3D) representation space, with depth cues
-  * Tracked HMDs allow for highly intutive, embodied interfacing 
+  * Tracked HMDs allow for highly intuitive, embodied interfacing 
 ### Next Steps
+* Vision science-based object positioning
 * Model collision detection
 * Collect/deploy image covers
 * 100MB max, automatic decimation
