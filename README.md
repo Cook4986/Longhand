@@ -1,5 +1,5 @@
 # **Longhand** #
-Longhand is a word cloud generator, but the words are 3D models deployed in 360 degrees. The models chosen (and their placement) represent text token frequencies in a target corpus. Longhand exposes text-centric researchers to the specific benefits of immersive visualization, including depth cues and embodiment.
+Longhand is a word cloud generator, but the words are 3D models deployed in 360 degrees around the user. The models chosen (and their placement) represent text token frequencies in a target corpus. Longhand exposes text-centric researchers to the specific benefits of immersive visualization, including depth cues and embodiment.
 
 ![throughput diagram](https://github.com/Cook4986/Longhand/blob/main/Longhand_Throughput_2023.png)
 
